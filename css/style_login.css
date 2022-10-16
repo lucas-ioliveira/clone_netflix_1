@@ -1,0 +1,133 @@
+:root {
+  --bg-color: #000;
+  --primary-color: rgb(229 9 20);
+  --text-default: #fff;
+  --others-text: rgb(115 115 115);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*fontes*/
+@import url('https://fonts.googleapis.com/css2? family= Roboto & display=swap');
+
+/*body */
+body{
+  font-family:Roboto,sans-serif;
+  background: var(--bg-color);
+}
+
+/*container*/
+.container{
+  width: 100vw;
+  height: 100vh;
+}
+
+header{
+  height:10%;
+}
+/*Logo*/
+img{
+  width: 150px;
+  height: auto;
+}
+
+/*form*/
+.formulario{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+}
+
+.formulario h3 {
+  width: 100%;
+}
+
+.singin{
+  color: var(--text-default) ;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  height:calc(100vh - 10%);
+  margin-top: -2rem;
+}
+
+/*inputs*/
+.inputs {
+  display: grid;
+  row-gap: 1rem;
+  min-width: 18rem;
+}
+
+.input_email_password input:nth-of-type(1) {
+  margin-bottom: 2rem;
+}
+
+.inputs input{
+  background: gray;
+  border: none;
+  border-radius:5px;
+  display: block;
+  padding: 10px;
+  width:100%;
+  margin-bottom:10px;
+}
+
+
+input::placeholder{
+  color: rgba(255, 255, 255, 0.5);
+  
+}
+
+/*Botão*/
+.submit{
+  padding: 10px;
+  width:100%;
+  border-radius:5px;
+  color:var(--text-default);
+  background-color:var(--primary-color);
+}
+
+.submit:hover{
+  background:rgba(229 , 9, 20, 0.8);
+}
+
+.checkbox{
+  display:flex;
+  justify-content: space-between;
+  color: var(--others-text);
+  margin-top:5px;
+  
+}
+.checkbox label {
+  display:flex;
+  align-items: center;
+}
+
+.checkbox label p { font-size: 10px; }
+.checkbox a { 
+  font-size: 10px;
+  color: var(--others-text);
+  text-decoration: none;
+} 
+
+.checkbox label input {
+  width: auto;
+  margin: 0 5px 0 0;
+}
+
+.paragrafo {
+  color: var(--others-text);
+  font-size:10px;
+  margin-top:30px;
+}
+
+.paragrafo a {
+  color: #fff;
+  text-decoration: none;
+}
